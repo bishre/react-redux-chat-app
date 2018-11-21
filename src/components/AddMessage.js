@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AddMessage = (props) => {
-  let input
-
+export const AddMessage = (props) => {
+  let input;
   return (
-    <section id="newMessage">
+    <section id="new-message">
       <input
         onKeyPress={(e) => {
           if (e.key==='Enter') {
@@ -14,7 +13,7 @@ const AddMessage = (props) => {
           }
         }}
         type="text"
-        ref{(node)=>{
+        ref={(node)=>{
           input=node
         }}
       />
